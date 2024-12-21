@@ -1,0 +1,26 @@
+menu "Minion Config"
+
+    config WIFI_SSID
+        string "WiFi SSID"
+        help
+            SSID (network name).
+
+    config WIFI_PASSWORD
+        string "WiFi Password"
+        help
+            WiFi password (WPA or WPA2).
+
+
+    config WIFI_CONNECT_MAXIMUM_RETRY
+        int "Max retries"
+        default 3
+        help
+            Number of retries to connect to router.
+
+    config MINION_NAME
+        string "Minion name"
+        default "Kevin"
+        help
+            Unique name for the minion
+
+endmenu

@@ -4,12 +4,26 @@
 # Hardware connections
 
 ```
-[ Boiler relay box ]===========++==============[ Thermostat ]
-                               ||
-                               ||
-                               ++==========[ Relay ]----- GPIO 33
+[ Boiler relay box ]
+      |  |
+      |  |
+      |  |
+      |  |
+      |  |
+      |  |
+      |  +---------[            ] 
+      |  |         [ Thermostat ]
+      +------------[            ]
+      |  |
+      |  |         
+      |  +---------[         ]
+      |  |         [  Relay  ]----- GPIO 33
+      +------------[         ]
 
-[DS18B20 (outdoor temp)] -------------------------------- GPIO 15
+
+
+
+[DS18B20 (outdoor temp)] ---------- GPIO 15
 ```
 
 # To build and flash
